@@ -2,11 +2,11 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 const NavbarImage = () => {
-const {data} = useSelector((state)=>state)
+const {navbarReducer} = useSelector((state)=>state)
 
   return (
     <div>
-        <img src={data.avatar}/>
+        <img src={navbarReducer.data.logo}/>
     </div>
   )
 }

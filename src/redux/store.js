@@ -1,20 +1,8 @@
 //simpan konfigurasi redux
 
 import { createStore } from "redux";
+import rootReducer from "./reducers";
 
-const authState = {
-    data:{
-        name: "muhsin",
-        avatar: "https://reqres.in/img/faces/7-image.jpg",
-      }
-   
-};
-
-const authReducer = (state = authState) => {
-    return state;
-}
-const store = createStore(authReducer);
-
-// export const store = createStore(initState);
+const store = createStore (rootReducer);
 
 export default store;

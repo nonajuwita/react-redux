@@ -4,11 +4,11 @@ import { useSelector } from "react-redux";
 
 
 const CardImage = () => {
-const {data} = useSelector((state)=> state)
+const {cardReducer} = useSelector((state)=> state)
   
   return (
     <div>
-        <img src={data.avatar}/>
+        <img src={cardReducer.data.avatar}/>
     </div>
   )
 }

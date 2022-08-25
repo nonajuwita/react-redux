@@ -2,11 +2,11 @@ import React from "react";
 import { useSelector } from 'react-redux'
 
 const CardName = () => {
-    const {data}= useSelector((state)=>state)
+    const {cardReducer}= useSelector((state)=>state)
     
   return (
     <div>
-      <h1>{data.name}</h1>
+      <h1>{cardReducer.data.name}</h1>
     </div>
   );
 };
